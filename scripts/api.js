@@ -7,8 +7,9 @@ export async function getBooks() {
             throw new Error(`response status: ${res.status}`);
         }
         const result = await res.json();
-        console.log(result);
+        return result.docs;
     } catch (error) {
         console.error(error.message);
+        return [];
     }
 }
