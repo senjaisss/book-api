@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#book-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .book-title {
+
+}
+
+.book-author {
+
+} */
