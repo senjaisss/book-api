@@ -21,7 +21,13 @@ export function displayBooks(books) {
             img.alt = book.title || 'book cover';
             img.classList.add('book-cover');
             bookItem.appendChild(img);
-        };
+        } else {
+            const img = document.createElement('img');
+            img.src = '/assets/no-cover-available.png'
+            img.alt = 'no cover found';
+            img.classList.add('book-cover');
+            bookItem.appendChild(img);
+        }
 
         bookItem.appendChild(author);
         bookItem.appendChild(title);
